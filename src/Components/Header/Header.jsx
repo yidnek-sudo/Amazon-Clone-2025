@@ -5,9 +5,9 @@ import {BsSearch} from "react-icons/bs";
 import LowerHeader from "./LowerHeader";
 import { BiCart } from "react-icons/bi";
 
-function Header() {
+const Header =() => {
   return (
-    <section>
+    <>
       <section>
         <div className={classes.header_container}>
           {/* {logo} */}
@@ -18,59 +18,57 @@ function Header() {
                 alt="amazon logo"
               />
             </a>
+            {/* {delivery} */}
+            <div className={classes.delivery}>
+              <span>
+                <SlLocationPin />
+              </span>
+              <div>
+                <p>Delivered to</p>
+                <span>Ethiopia</span>
+              </div>
+            </div>
           </div>
-          {/* {delivery} */}
-          <div className={classes.delivery}>
-            <span>
-              <SlLocationPin />
-            </span>
+          {/* {search section} */}
+          <div className={classes.search}>
+            <select name="" id="">
+              <option value="">All</option>
+            </select>
+            <input type="text" />
+            <BsSearch size={25} />
           </div>
-          <div>
-            <p>Delivered to</p>
-            <span>Ethiopia</span>
-          </div>
-        </div>
-        {/* {search section} */}
-        <div className={classes.search}>
-          <select name="" id="">
-            <option value="">All</option>
-          </select>
-          <input type="text" name="" id="" placeholder="search product" />
-          <BsSearch size={25} />
-        </div>
-        {/* {other section} */}
-        {/* {right side link} */}
-        <div>
+          {/* {other section} */}
+          {/* {right side link} */}
+
           <div className={classes.order_container}>
             <a href="" className={classes.language}>
               <img
                 src="https://www.shutterstock.com/shutterstock/photos/2413061151/display_1500/stock-photo-ethiopia-flag-on-a-wooden-surface-banner-of-the-grunge-ethiopia-flag-2413061151.jpg"
                 alt="ethiopian flag"
               />
-              <section>
+
+              <select name="" id="">
                 <option value="">EN</option>
-              </section>
+              </select>
+            </a>
+            {/* {3 components} */}
+            <a href="">
+              <p>Sign In</p>
+              <span>Account & Lists</span>
+            </a>
+            <a href="">
+              <p>returns</p>
+              <span>& Orders</span>
+            </a>
+            <a href="" className={classes.cart}>
+              <BiCart size={35} />
+              <span>0</span>
             </a>
           </div>
-          {/* {3 components} */}
-          <a href="">
-            <p>Sign In</p>
-            <span>Account & Lists</span>
-          </a>
-          {/* {orders} */}
-          <a href="">
-            <p>returns</p>
-            <span>& Orders</span>
-          </a>
-          {/* {carts } */}
-          <a href="" className={classes.cart}>
-            <BiCart size={35} />
-            <span>0</span>
-          </a>
         </div>
       </section>
-      <LowerHeader/>
-    </section>
+      <LowerHeader />
+    </>
   );
 }
 
