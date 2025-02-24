@@ -1,8 +1,9 @@
 import React from 'react'
+import classes from './catagory.module.css'
 
 function CatagoryCard({data}) {
   return (
-    <div>
+    <div className={classes.catagory}>
         <a href="">
             <span>
                 <h1>{data.title}</h1>
