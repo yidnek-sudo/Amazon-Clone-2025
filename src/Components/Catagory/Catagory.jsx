@@ -7,7 +7,7 @@ function Catagory() {
   return (
   <section className={classes.catagory_containers}>
     {
-        catagotyInfos.map((infos)=>{
+        catagotyInfos?.map((infos)=>{
             <CatagoryCard data = {infos}/>
         })
     }
