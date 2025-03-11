@@ -1,15 +1,17 @@
-export const catagotyInfos = [
+export const catagoryInfos = [
   {
     title: "Electronics",
     name: "electronics",
     imageLink:
-      "https://images-ns.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_TV_2X._SY304_CB432517900_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_TV_2X._SY304_CB432517900_.jpg",
   },
   {
     title: "Discover fashion trends",
     name: "Women's clothing",
     imageLink:
-      "https://images-ns.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2023/March/mp_20230219_ff_desktopsinglecatagory_desktop_379*304_1._SY304_CB612639047_.jpg",
+
+      "https://m.media-amazon.com/images/I/51HJcbvhCKL._AC_SY445_.jpg",
+
   },
   {
     title: "Men's clothing",

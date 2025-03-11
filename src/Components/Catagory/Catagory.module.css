@@ -1,11 +1,11 @@
 .catagory {
     height: 350px;
-    width: 350px;
+    width: 250px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .catagory img{
-    width: 100%;
+    width: 90%;
     object-fit: contain;
     max-height: 250px;
     padding: 0px 10px;
@@ -26,8 +26,8 @@
 }
 .catagory_containers {
     position: relative;
-    margin-top: -10%;
+    margin-top: -15%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     place-items: center;
 }
