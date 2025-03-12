@@ -1,6 +1,8 @@
 const { onRequest } = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
 
+// const functions = require("firebase-functions");
+
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -9,6 +11,10 @@ const stripe = require("stripe")(process.env.VITE_STRIPE_KEY);
 const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
+
+// app.get("/", (req, res) => {
+//   res.json({ message: "successful" });
+// });
 
 app.get("/", (req, res) => {
   res.status(200).json({
@@ -34,3 +40,4 @@ app.post("/payment/create", async (req, res) => {
   }
 });
 exports.api = onRequest(app);
+// exports.api = functions.https.onRequest(app);

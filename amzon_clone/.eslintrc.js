@@ -26,15 +26,3 @@ module.exports = {
   ],
   globals: {},
 };
-
-// module.exports = {
-//   env: {
-//     node: true, // ✅ Enables Node.js global variables like require, module, process
-//     es6: true,
-//   },
-//   extends: ["eslint:recommended"],
-//   rules: {
-//     "no-unused-vars": "warn", // ✅ Change to warning instead of error
-//     "no-undef": "off", // ✅ Disables errors for require, module, exports, etc.
-//   },
-// };

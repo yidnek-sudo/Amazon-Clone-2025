@@ -29,7 +29,7 @@ function Cart() {
          <section className={classes.container}>
           <div className={classes.cart_container}>
             <h2>Hello</h2>
-            <h3>your shoping basket</h3>
+            <h3>your shopping basket</h3>
             <hr />
             {
               basket?.length==0?(<p>Opps ! No item in your Cart </p>):(

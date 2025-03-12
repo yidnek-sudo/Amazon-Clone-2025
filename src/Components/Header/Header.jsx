@@ -10,8 +10,13 @@ import { auth } from '../../Utility/firebase';
 
 const Header =() => {
 
-  const [{basket, user},dispatch] = useContext(DataContext)
-  const totalItem =basket?.reduce((amount,item)=>{return item.amount +amount},0)
+  // const [{basket, user},dispatch] = useContext(DataContext)
+  // const totalItem =basket?.reduce((amount,item)=>{return item.amount +amount},0)
+
+   const [{ user, basket }, dispatch] = useContext(DataContext);
+   const totalItem = Array.isArray(basket)
+     ? basket.reduce((amount, item) => amount + item.amount, 0)
+     : 0;
 
   return (
     <section className={classes.fixed}>
@@ -58,7 +63,7 @@ const Header =() => {
             </select>
           </a>
           {/* {3 components} */}
-          <Link to="/auth">
+          <Link to= { !user && "/auth"}>
             <div>
                 {user?(
                   <>
